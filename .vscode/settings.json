@@ -1,0 +1,22 @@
+{
+	"workbench.view.alwaysShowHeaderActions": true,
+	"editor.find.autoFindInSelection": "never",
+	"editor.formatOnType": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.minimap.showSlider": "mouseover",
+	"editor.acceptSuggestionOnEnter": "on",
+	"editor.inlineSuggest.suppressSuggestions": true,
+	"editor.quickSuggestions": {
+		"comments": "on",
+		"strings": "on"
+	},
+	"editor.snippetSuggestions": "top",
+	"editor.suggest.preview": true,
+	"editor.suggest.showStatusBar": true,
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"workbench.commandPalette.experimental.suggestCommands": true,
+	"workbench.settings.useSplitJSON": false,
+	"editor.suggest.showClasses": true,
+	"editor.inlineCompletionsAccessibilityVerbose": false
+}
