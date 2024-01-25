@@ -1,5 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Link } from "lucide-react";
+import { Button, buttonVariants } from "@/components/ui/button";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,7 +15,10 @@ export default function Home() {
         </h1>
         <p className="mt-6 text-lg max-w-prose text-muted-foreground">Welcome </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
-         <Link href="/products" className="">Browse</Link>
+          <Link href="/products" className={buttonVariants()}>Browse</Link>
+          <Button variant='ghost'>
+            Our collection  &rarr;
+          </Button>
         </div>
       </div>
 
