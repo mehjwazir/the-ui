@@ -1,6 +1,7 @@
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Icons } from "./Icons";
 import NavItems from "./NavItems";
+import Link from "next/link";
 
 const Navbar = () => {
 	return (
@@ -10,9 +11,9 @@ const Navbar = () => {
 					<div className="border-b border-gray-200">
 						<div className="flex h-16 items-center">
 							<div className="ml-4 flex lg:ml-0"> 
-								<a href="/"> 
-									<Icons.logo className="h-12 w-12" />
-								</a>
+								<Link href='/'>
+									<Icons.logo className='h-10 w-10' />
+								</Link>
 							</div>
 							<div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">
 								<NavItems />
