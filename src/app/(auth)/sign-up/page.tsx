@@ -10,7 +10,8 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 
 const Page = () => {
-	const {register} = useForm()
+	const { register } = useForm() 
+	// test
 	return (
 		<>
 			<div className="container relative flex pt-20 flex-col items-center justify-center lg:px-0">
