@@ -7,8 +7,10 @@ import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
 
-const Page = ()  => {
+const Page = () => {
+	const {register} = useForm()
 	return (
 		<>
 			<div className="container relative flex pt-20 flex-col items-center justify-center lg:px-0">
