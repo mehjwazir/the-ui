@@ -22,7 +22,7 @@ interface Args {
 
 export const getPayloadClient = async ({
 	initOptions,
-}: Args ={}): Promise<Payload> => {
+}: Args) => {
 	if (!process.env.PAYLOAD_SECRET) {
 		throw new Error('PAYLOAD_SECRET is missing')
 	}
