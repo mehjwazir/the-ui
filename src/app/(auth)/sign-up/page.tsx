@@ -23,10 +23,12 @@ const Page = () => {
 	}) 
 
 
-	const {data} = trpc.anyApiRoute.useQuery()
+
+const {data} = trpc.auth.createPayloadUser.useMutation()
 	console.log(data)
 
-	
+
+
 	const onSubmit = ({ email, password }: TAuthCredentialsValidator) => {
 		
 	}
