@@ -26,5 +26,7 @@ export const authRouter = router({
 				role: 'user',
 			},
 		})
+
+		return { sucess: true,  sentToEmail: email }
 	}),
 })

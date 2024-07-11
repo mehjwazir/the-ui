@@ -28,8 +28,14 @@ const {data} = trpc.auth.createPayloadUser.useMutation()
 	console.log(data)
 
 
-
-	const onSubmit = ({ email, password }: TAuthCredentialsValidator) => {
+	const {mutate, isLoading } = trpc.auth.createPayloadUser.useMutation({
+		
+	})
+	const onSubmit = ({
+		email,
+		password
+	}: TAuthCredentialsValidator) => {
+		mutate({email, password})
 		
 	}
 
@@ -72,6 +78,7 @@ const {data} = trpc.auth.createPayloadUser.useMutation()
 									<Label htmlFor="password">Password</Label>
 									<Input
 										{...register('password')}
+										type="password"
 										className={cn({
 										"focus-visible:ring-red-500": errors.password,
 									})}
